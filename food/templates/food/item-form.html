@@ -1,0 +1,35 @@
+{% extends 'food/base.html' %}
+{% block body %}
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header bg-primary text-white">
+                    <h4 class="mb-0">Add Item</h4>
+                </div>
+                <div class="card-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="item-name" class="form-label">Item Name</label>
+                            <input type="text" class="form-control" id="item-name" name="item-name" placeholder="Enter item name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="description" class="form-label">Description</label>
+                            <textarea class="form-control" id="description" name="description" rows="3" placeholder="Enter item description" required></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label for="price" class="form-label">Price</label>
+                            <input type="number" class="form-control" id="price" name="price" placeholder="Enter item price" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="image" class="form-label">Image URL</label>
+                            <input type="text" class="form-control" id="image" name="image" placeholder="Enter image URL" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Add Item</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
